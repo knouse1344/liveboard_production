@@ -1,0 +1,2 @@
+module MyboardHelper
+end

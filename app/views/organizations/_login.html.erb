@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+
+        <%= form_tag sessions_org_create_path do %>
+        <%= label_tag :email %>
+        <%= text_field_tag :email, params[:email], class: "shadow_select" %>
+        <%= label_tag :password %>
+        <%=  password_field_tag :password %>
+
+        <%= submit_tag "Login", :controller => 'Sessions', :action => 'org_create', class: "btn"  %>
+        <% end %>
+</html>

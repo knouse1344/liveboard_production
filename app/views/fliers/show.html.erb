@@ -1,0 +1,38 @@
+<html>
+  <head>
+        <%= stylesheet_link_tag    "application", media: "all" %>
+        <%= javascript_include_tag "application" %>
+        <%= csrf_meta_tags %>
+        <%= render 'layouts/header' %>
+  </head>
+  <div id="body">
+        </br></br></br></br></br></br>
+
+        <div class="container">
+              <div id="newborder">
+
+                <div id="toprow">
+
+                    <%= image_tag @flier.image.url, class: "showimg" %>
+                    <ul class="showbtnlist">
+                        <li><%= button_to 'Add to MyBoard', myboard_add_flier_path(:flier_id => @flier.id), class: "btn btn-success" %></li>
+                        <li><%= button_to 'Edit flier', {:controller => "fliers", :action => "edit", :flier_id => @flier.id}, class: "btn" %></li>
+                        <li><%= button_to 'Invite friends', invite_path(:flier_id => @flier.id), class: "btn" %></li>
+                        <li><%= button_to 'Delete this flier', { :controller => "fliers",
+                                                           :action => "destroy",
+                                                           :flier_id => @flier.id},
+                                                           :confirm => 'Are you sure?', class: "btn btn-danger" %></li>
+                    </ul>
+                    <div class="shfltit"><h1><%= @flier.title %></h1></div>
+
+                    <div class="shfltag"><h2><%= @flier.tag %></h2></div>
+
+                    <div class="shfldesc"><h3><%= @flier.description %></h3></div>
+
+                </div>
+
+              </div>
+        </div>
+    </div>
+  <div id="footer"><%= render 'layouts/footer' %></div>
+</html>

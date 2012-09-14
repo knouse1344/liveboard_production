@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/header' %>
+  </head>
+  <div id="body">
+
+    <div class="container">
+
+        <br/><br/>
+
+          <h1><%= @channel_name %> </h1>
+
+            <% unless @myfliers_for_channel.empty? %>
+
+                 <% @myfliers_for_channel.each do |myflier| %>
+
+                    <div class="fliers shadow">
+                      <div class ="flierdata">
+                            <%= image_tag Flier.find_by_id(myflier.flier_id).image.url(:thumb), class: "flimg" %>
+                            <%= link_to  Flier.find_by_id(myflier.flier_id).title, show_flier_path(:id => myflier.flier_id), class: "fltit" %>
+                            <%= button_to 'Add!', myboard_add_flier_path(:flier_id => myflier.flier_id), class: "btn fladd" %>
+                      </div>
+                    </div>
+
+                 <%end%>
+
+                 <%end%>
+
+        <br/><br/><br/><br/>
+
+    </div>
+  </div>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<header class="nav navbar-fixed-top">
+
+    <div class="headerbgs shadowhead">
+
+          <div class="container">
+                <div class="search">
+                  <%= form_tag fliers_path, method: :get do %>
+                  <p>
+                    <%= text_field_tag :query, params[:query], class: "searchfield" %>
+                    <%= submit_tag "Search", class: "btn searchbtn"%>
+                  </p>
+                  <% end %>
+                </div>
+          </div>
+
+      <% if current_user %>
+
+          <div class="container">
+            <ul id="channels">
+                <li id="chbtnall"><a href="../liveboard"></a></li>
+                <li id="chbtnaca"><a href="../channels/academics"></a></li>
+                <li id="chbtnart"><a href="../channels/arts"></a></li>
+                <li id="chbtnnig"><a href="../channels/nightlife"></a></li>
+                <li id="chbtnspo"><a href="../channels/sports"></a></li>
+            </ul>
+          </div>
+
+      <% else %>
+      <% end %>
+
+    </div>
+
+  <nav>
+
+      <div class="container">
+
+        <div class="nav pull-right">
+
+           <ul class="admin">
+                <% if current_user %>
+                <% if session[:user_id] %>
+
+
+
+                <li> <%= link_to '+ Create Flier', create_flier_path %></li>
+                <li> <%= link_to current_user.fname + " " + current_user.lname, myboard_path %></li>
+                <li> <%= link_to 'Sign Out', logout_path %> </li>
+                <li class="userimg"><%= image_tag current_user.image_url %></li>
+                <% end %>
+
+                <div class="invitemsg">
+                    <% if current_user.invitation_limit > 0 %>
+                    You have <%=current_user.invitation_limit%> invitations remaining.
+                    <%= link_to 'Send invitations', new_invitation_path %>
+                    <%end%>
+                </div>
+
+                <% if  session[:organization_id] %>
+                <li> <%= link_to current_user.name, myboard_path%> </li>
+                <li> <%= link_to '+ Create Flier', create_flier_path %></li>
+                <li> <%= link_to 'Sign Out', org_logout_path %> </li>
+                <li class="userimg"><%= image_tag current_user.image %></li>
+
+                <% else %>
+                <% end %>
+           </ul>
+           <%end%>
+        </div>
+
+            <% liveboardlogo = image_tag('header_logo.png') %>
+            <%= link_to liveboardlogo, liveboard_path, :class => 'lblogo'%>
+
+      </div>
+
+    </nav>
+
+</header>

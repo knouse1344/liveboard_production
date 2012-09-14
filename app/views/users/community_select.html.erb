@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js">$('.dropdown-toggle').dropdown()</script>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/header' %>
+  </head>
+  <body>
+
+
+  <div class="container">
+        <div class="combox">
+                <%= form_for(@user) do |f| %>
+                <%= f.label :community_id, 'Select Community:', class: "comtit" %>
+                <%= f.select(:community_id,  options = {'Community' => '',
+                                               'Amherst College' => '1',
+                                               'University of Rochester' => '2',
+                                               'Macalester College' => '3'}, {}, { :class => '' })%>
+                <%= f.submit class: "btn update" %>
+                <% end %>
+        </div>
+
+
+
+
+  </br></br></br></br></br></br></br></br></br></br>
+
+        <%= render 'layouts/footer' %>
+    </div>
+  </body>
+</html>

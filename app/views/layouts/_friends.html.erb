@@ -1,0 +1,11 @@
+<div class="friendcontainer">
+    <h2>My friends:</h2><br/>
+    <% @friends.each do |friend| %>
+      <div class="friendbord">
+        <div class="frienditems">
+            <%= image_tag friend.image_url %>
+          </div>
+          <div class="friendname"><%= friend.fname+" "+friend.lname %></div>
+      </div>
+    <% end %>
+</div>

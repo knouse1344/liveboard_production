@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/header' %>
+  </head>
+  <div id="body">
+
+    <div class="container">
+
+                        <h3>Added Fliers</h3>
+                        <% if @added_fliers.empty? %>
+                        <p> Nothing to see here yet.  Try checking out one of the channels. </p>
+                        <%end%>
+
+                        <%unless @academic_fliers.empty?%>
+                        <br/><br/><br/><h3>Academic:</h3>
+                        <% @academic_fliers.each do |flier| %>
+                          <div class="fliers shadow">
+                              <div class="flierdata">
+                                <%= image_tag  flier.image.url(:thumb), class: "flimg"  %>
+                                <%= link_to flier.title, show_flier_path(:id => flier.id), class: "fltit"  %>
+                              </div>
+                          </div>
+                        <% end %>
+                        <% end %>
+
+
+                        <%unless @arts_fliers.empty?%>
+                        <br/><br/><br/><h3>Arts:</h3>
+                        <% @arts_fliers.each do |flier| %>
+                          <div class="fliers shadow">
+                              <div class="flierdata">
+                                <%= image_tag  flier.image.url(:thumb), class: "flimg"  %>
+                                <%= link_to flier.title, show_flier_path(:id => flier.id), class: "fltit"  %>
+                              </div>
+                          </div>
+                        <% end %>
+                        <% end %>
+
+
+                        <%unless @nightlife_fliers.empty?%>
+                        <br/><br/><br/><h3>Nightlife:</h3>
+                        <% @nightlife_fliers.each do |flier| %>
+                          <div class="fliers shadow">
+                              <div class="flierdata">
+                                <%= image_tag  flier.image.url(:thumb), class: "flimg"  %>
+                                <%= link_to flier.title, show_flier_path(:id => flier.id), class: "fltit"  %>
+                              </div>
+                          </div>
+                        <% end %>
+                        <% end %>
+
+
+                        <%unless @sports_fliers.empty?%>
+                        <br/><br/><br/><h3>Sports:</h3>
+                        <% @sports_fliers.each do |flier| %>
+                          <div class="fliers shadow">
+                              <div class="flierdata">
+                                <%= image_tag  flier.image.url(:thumb), class: "flimg"  %>
+                                <%= link_to flier.title, show_flier_path(:id => flier.id), class: "fltit"  %>
+                              </div>
+                          </div>
+                        <% end %>
+                        <% end %>
+
+
+                        <br/><br/><br/><h3>Created:</h3>
+                        <% unless @created_fliers.empty? %>
+                        <% @created_fliers.each do |flier| %>
+                            <div class="fliers shadow">
+                                <div class="flierdata">
+                                    <% @image =  image_tag flier.image.url(:thumb), class: "flimg" %>
+                                    <%= link_to @image, show_flier_path(:id => flier.id)%>
+                                    <br/>
+                                    <%= link_to flier.title, show_flier_path(:id => flier.id), class: "fltit"  %>
+                                    <ul class="btnlist">
+                                        <li><%= button_to 'Edit', {:controller => "fliers", :action => "edit", :flier_id => flier.id}, class: "btn" %></li>
+                                        <li><%= button_to 'Invite friends', invite_path(:flier_id => flier.id), class: "btn" %></li>
+                                        <li><%= button_to ' X ', {:controller => "fliers",
+                                                                           :action => "destroy",
+                                                                           :flier_id => flier.id}, class: "del btn btn-danger",
+                                                                           :confirm => 'Are you sure?'%></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <% end %>
+                        <% else %>
+                          No fliers here yet.  Try creating one.
+                        <%end%>
+
+
+
+                      <% unless @invitations.empty? %>
+                      <p>Invitations:
+                        <% @invitations.each do |flier| %>
+                          <br/>
+                          <%= image_tag flier.image.url(:thumb) %>
+                          <br/>
+                          <%= flier.title %><br/>
+                          <%= button_to 'Add to My Board', myboard_add_flier_path(:flier_id =>flier.id) %>
+                        <% end %>
+                       <% end %>
+
+    </div>
+  </div>
+</html>

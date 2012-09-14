@@ -1,0 +1,137 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+/* Show Fliers */
+
+#newborder {
+    border: 1px solid #cacaca;
+    width: 920px;
+    height: 360px;
+    padding:  10px;
+}
+#toprow {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.shfltit {
+    display: inline-block;
+    position: absolute;
+    width:300px;
+    margin-top: 25px;
+    margin-left: 35px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+}
+.showbtnlist {
+    position: absolute;
+    display: inline-block;
+    float: right;
+    margin-top:300px;
+}
+.showbtnlist li{
+    margin-left: 10px;
+    display: inline-block;
+}
+.shfltag {
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+    margin-left: 35px;
+    margin-top: 120px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+}
+.showimg {
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 375px;
+    max-height: 300px;
+    padding: 5px;
+    outline: 1px #cacaca solid;
+}
+.shfldesc {
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+    margin-top: 200px;
+    margin-left: 35px;
+    margin-right: 15px;
+    margin-bottom:15px;
+}
+
+
+
+/* Create Fliers */
+
+#crnewborder {
+    border: 1px solid #cacaca;
+    width: 920px;
+    padding:  10px;
+}
+#crfldata {
+    padding-left:40px;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+}
+#crflimg {
+    position: relative;
+    top: 25px;
+    padding-bottom: 50px;
+}
+#crfltitle {
+    display: inline-block;
+    width: 250px;
+}
+#crflchannel {
+    display: inline-block;
+    margin-left: 50px;
+}
+#crflprivacy {
+    display: inline-block;
+    margin-left: 70px;
+}
+#crfldateinput {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.datecursor {
+    cursor:crosshair;
+}
+#crfltagline {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.flytag {
+    width: 508px;
+}
+#crfldescription {
+    display:inline-block;
+    padding-bottom: 25px;
+}
+.flydesc {
+    width: 810px;
+    height: 100px;
+}
+.flytime {
+    width: 60px;
+}
+.field_with_errors {
+}
+.field_with_errors .message {
+    position: absolute;
+    color: #ff0000;
+
+}

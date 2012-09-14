@@ -1,0 +1,22 @@
+ <h3>Created Fliers </h3>
+        <% unless @created_fliers.empty? %>
+          <% @created_fliers.each do |flier| %>
+            <br/>
+            <% @image =  image_tag flier.image.url(:thumb) %>
+            <%= link_to @image, show_flier_path(:id => flier.id) %>
+            <br/>
+            <%= flier.title %><br/>
+
+            <%= button_to 'Edit flier', :controller => "fliers", :action => "edit", :flier_id => flier.id %>
+            <%= button_to 'Invite friends', invite_path(:flier_id => flier.id) %>
+            <%= button_to 'Delete this flier', {:controller => "fliers",
+                                               :action => "destroy",
+                                               :flier_id => flier.id},
+                                               :confirm => 'Are you sure?'%>
+
+          <% end %>
+
+        <% else %>
+          No fliers here yet.  Try creating one.
+          <br/><br/>
+        <%end%>

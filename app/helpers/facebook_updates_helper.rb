@@ -1,0 +1,2 @@
+module FacebookUpdatesHelper
+end

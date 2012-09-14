@@ -1,0 +1,94 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+/* Show Fliers */
+
+.showimg {
+    position: relative;
+    margin-left: 5px;
+    height: 300px;
+    width: 900px;
+    padding: 5px;
+    outline: 1px #cacaca solid;
+}
+#newborder {
+    border: 1px solid #cacaca;
+    width: 920px;
+    padding:  10px;
+}
+#showbtnlist {
+
+    width: 800px;
+    height: 50px;
+    border:  1px solid #000;
+}
+.showbtns {
+    display: inline-block;
+    width: 100px;
+    position: relative;
+    margin-left: 50px;
+}
+
+
+/* Create Fliers */
+
+#crfldata {
+    padding-left:40px;
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+}
+#crflimg {
+    position: relative;
+    top: 25px;
+    padding-bottom: 50px;
+}
+#crfltitle {
+    display: inline-block;
+    width: 250px;
+}
+#crflchannel {
+    display: inline-block;
+    margin-left: 50px;
+}
+#crflprivacy {
+    display: inline-block;
+    margin-left: 70px;
+}
+#crfldateinput {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#crfltagline {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.flytag {
+    width: 508px;
+}
+#crfldescription {
+    display:inline-block;
+    padding-bottom: 25px;
+}
+.flydesc {
+    width: 810px;
+    height: 100px;
+}
+.flytime {
+    width: 60px;
+}
+.field_with_errors {
+}
+.field_with_errors .message {
+    position: absolute;
+    color: #ff0000;
+
+}

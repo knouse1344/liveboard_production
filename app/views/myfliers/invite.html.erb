@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/header' %>
+  </head>
+  <body>
+<div class="container">
+<br/>
+<br/>
+<br/>
+<h2>Invite friends to <%= Flier.find_by_id(@flier).title %></h2>
+<br/>
+<%= form_tag :action => 'send_invite'%>
+<% @friends.each do |friend| %>
+ 
+   <%= image_tag friend.image_url %>
+   <%= check_box_tag("invitee_ids[]", friend.id) %>
+  <%= label_tag(friend.id, friend.fname+" "+friend.lname) %>
+<br/>
+  <% end %>
+
+<%= hidden_field_tag("flier_id", @flier) %>
+
+<%= submit_tag "Send" %>
+
+</div>
+  </body>
+     <%= render 'layouts/footer' %>

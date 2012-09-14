@@ -1,0 +1,24 @@
+<h2><%=  @friend.fname+" "+@friend.lname %></h2>
+<%= image_tag @friend.image_url %>
+<%= Community.find_by_id(@friend.community_id).name %>
+<p>
+<% unless @fliers.empty? %>
+  <% @fliers.each do |flier| %>
+
+
+  <br/>
+    <%= image_tag flier.image.thumb('400x200#').url %>
+  <br/>
+    <%= flier.title %><br/>
+      <%  if @fliers_for_adding.include?(flier) %>
+      <%= button_to 'Add to My Board', myboard_add_flier_path(:flier_id =>flier.id) %>
+      <% else %>
+      <%= "Already Added" %>
+    <% end %>
+  <% end %>
+<% else %>
+<br/>
+<%= @friend.fname %> has not added any fliers yet.
+<% end %>
+<br/><br/>
+</p>

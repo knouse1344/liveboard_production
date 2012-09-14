@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/header' %>
+  </head>
+  <body>
+
+<p> We could not find an organization with that e-mail address.  You can create a new
+organization by filling out this form.</p>
+
+
+<%= form_for @organization, :html => {:multipart => true}, :validate => true do |f| %>
+<%= f.label :email %>
+<%= f.text_field  :email, :value => @email  %>
+<%= f.label :community_id, 'Select Community:' %>
+<%= f.select :community_id, options = {'Community' => '',
+                                       'Amherst College' => '1',
+                                       'University of Rochester' => '2',
+                                       'Macalester College' => '3'}, class: "comsel" %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.label :password %>
+<%= f.password_field :password %>
+<%= f.label :password_confirmation %>
+<%= f.password_field :password_confirmation %>
+<%= f.label :image %>
+<%= f.file_field :image %>
+
+<br/>
+<%= f.submit "Register", :controller => 'Organizations', :action => 'create', class: "btn" %>
+<% end %>
+  </body>
+</html>

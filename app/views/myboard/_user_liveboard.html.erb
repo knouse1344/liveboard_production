@@ -1,0 +1,74 @@
+   <h3>Added Fliers</h3>
+    <% if current_user.added_fliers.empty? %>
+        Nothing to see here yet.  Try checking out one of the channels.
+    <%end%>
+      <%unless current_user.added_academic_fliers.empty?%>
+      <h3> Academic Fliers:</h3><br/>
+          <% current_user.added_academic_fliers.each do |flier| %>
+              <%= flier.image.url(:thumb) %>
+              <%= flier.title %>
+           <% end %>
+       <%end%>
+
+       <%unless current_user.added_arts_fliers.empty?%>
+        <h3> Arts Fliers: </h3><br/>
+          <% current_user.added_arts_fliers.each do |flier| %>
+              <%= flier.image.url(:thumb) %>
+              <%= flier.title %>
+           <% end %>
+       <%end%>
+
+       <%unless current_user.added_nightlife_fliers.empty?%>
+          <h3> Nightlife Fliers: </h3><br/>
+          <% current_user.added_nightlife_fliers.each do |flier| %>
+              <%= flier.image.url(:thumb) %>
+              <%= flier.title %>
+           <% end %>
+       <%end%>
+
+       <%unless current_user.added_sports_fliers.empty?%>
+          <h3> Sports Fliers: </h3><br/>
+          <% current_user.added_academic_fliers.each do |flier| %>
+              <%= flier.image.url(:thumb) %>
+              <%= flier.title %>
+           <% end %>
+       <%end%>
+
+
+          <br/><br/>
+          <h3>Created Fliers </h3>
+        <% unless @created_fliers.empty? %>
+          <% @created_fliers.each do |flier| %>
+            <% @image =  image_tag flier.image.url(:thumb) %>
+            <%= link_to @image, show_flier_path(:id => flier.id) %>
+            <br/>
+            <%= flier.title %>
+
+            <%= button_to 'Edit flier', :controller => "fliers", :action => "edit", :flier_id => flier.id %>
+            <%= button_to 'Invite friends', invite_path(:flier_id => flier.id) %>
+            <%= button_to 'Delete this flier', {:controller => "fliers",
+                                               :action => "destroy",
+                                               :flier_id => flier.id},
+                                               :confirm => 'Are you sure?'%>
+
+          <% end %>
+
+        <% else %>
+          No fliers here yet.  Try creating one.
+          <br/><br/>
+        <%end%>
+
+
+
+        <% unless @invitations.empty? %>
+        <p>Invitations:
+          <% @invitations.each do |flier| %>
+            <br/>
+            <%= image_tag flier.image.url(:thumb) %>
+            <br/>
+            <%= flier.title %><br/>
+            <%= button_to 'Add to My Board', myboard_add_flier_path(:flier_id =>flier.id) %>
+          <% end %>
+         <% end %>
+
+        </p>

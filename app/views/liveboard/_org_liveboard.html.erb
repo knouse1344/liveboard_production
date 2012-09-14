@@ -1,0 +1,14 @@
+   <% @fliers_for_org_liveboard.each do |flier| %>
+
+              <div class="fliers shadow">
+              <%= image_tag flier.image.url(:thumb), class: "flimg" %>
+              <%= link_to  flier.title, show_flier_path(:id => flier.id), class: "fltit" %>
+
+
+                <% if @fliers_for_adding.include?(flier) %>
+                  <%= button_to 'Add to my Billboard', org_add_flier_path(:flier_id => flier.id), class: "btn fladd" %>
+                <% else %>
+                <p>Already added</p>
+                <%end%>
+          </div>
+           <% end%>

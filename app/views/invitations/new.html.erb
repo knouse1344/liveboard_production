@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/app/assets/javascripts/fliers.js.coffee"></script>
+        <script src="/app/assets/javascripts/jquery-ui-timepicker.js"></script>
+        <%= render 'layouts/header' %>
+    </head>
+
+    <div id ="body">
+            <div class="container">
+
+              <br/><br/><br/><br/>
+
+              <div id="newborder">
+                <div id="crfldata">
+
+<%= form_for @invitation do |f| %>
+<p>
+  <%= f.label :recipient_email, "Friend's email address" %> <br/>
+  <%= f.text_field :recipient_email %>
+  <%= f.submit "Invite!" %>
+</p>
+
+
+<%end%>
+
+</div>
+              </div>
+            </div>
+      </div>
+      <div id="footer"><%= render 'layouts/footer' %></div>
+</html>

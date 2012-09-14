@@ -1,0 +1,26 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+.friendcontainer {
+    float: right;
+}
+.friendbord {
+    border:  1px solid #cacaca;
+    border-radius: 2px;
+    padding:  5px;
+    width: 160px;
+    margin-bottom: 3px;
+}
+.frienditems {
+    width: 25px;
+    height: 25px;
+}
+.friendname {
+    position: relative;
+    float: right;
+    width: 100px;
+    left: -15px;
+    bottom: 20px;
+}

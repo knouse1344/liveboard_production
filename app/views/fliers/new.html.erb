@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/app/assets/javascripts/fliers.js.coffee"></script>
+        <script src="/app/assets/javascripts/jquery-ui-timepicker.js"></script>
+        <%= csrf_meta_tags %>
+        <%= render 'layouts/header' %>
+    </head>
+
+    <div id ="body">
+            <div class="container">
+
+              <br/><br/><br/><br/>
+
+              <div id="crnewborder">
+                <div id="crfldata">
+
+                    <h1> Create Flier </h1>
+
+                    <%= form_for @flier, :url => {:action => :create},
+                          :html => {:multipart => true}, :validate => true do |f| %>
+
+                    <div id="crflimg">
+                        <%= f.label 'Upload an Image' %>
+                        <%= f.file_field :image %>
+                    </div>
+
+                    <div id="crfltitle">
+                        <%= f.label :title%>
+                        <%= f.text_field :title%>
+                    </div>
+
+                    <div id="crflchannel">
+                           <%= f.label :channel_id %>
+                           <%= f.select :channel_id, options ={'All' => '',
+                                        'Academic' => '1',
+                                        'Arts' => '2',
+                                        'Nightlife' => '3',
+                                        'Sports' => '4'}%>
+                    </div>
+
+                    <div id="crflprivacy">
+                        <%= f.label 'Privacy Status' %>
+                        <%= f.select :privacy_status, options = {'Public' => '1', 'Private' => '0'} %>
+                    </div>
+
+                    <div id="crfldateinput">
+                          <%= f.label 'Date' %>
+                          <%= f.text_field :start_time, :readonly => true%>
+                    </div>
+
+                    <div id="crfltagline">
+                        <%= f.label :tag, 'Tagline' %>
+                        <%= f.text_field :tag, class: "flytag" %>
+                    </div>
+
+                    <div id="crfldescription">
+                        <%= f.label :description, 'Description' %>
+                        <%= f.text_area :description, :class => 'flydesc' %>
+                    </div>
+
+                    <%= f.hidden_field :community_id, :value => current_user.community_id %>
+                    <%= f.hidden_field :creator_id, :value => current_user.id  %>
+
+                    <%= f.submit class: "btn"%>
+                    <% end %>
+
+                 </div>
+              </div>
+            </div>
+      </div>
+      <div id="footer"><%= render 'layouts/footer' %></div>
+</html>
