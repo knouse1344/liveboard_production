@@ -13,7 +13,7 @@
                   <%= link_to topflier.title, show_flier_path(:id => topflier.id), class: "fltit" %>
 
                       <% if @fliers_for_adding.include?(topflier) %>
-                      <%= button_to 'Add', myboard_add_flier_path(:id => topflier.id), class: "btn fladd" %>
+                      <%= button_to '    Add', myboard_add_flier_path(:id => topflier.id), class: "btn fladd" %>
                       <% else %>
                       <p> Already added </p>
                       <%end%>

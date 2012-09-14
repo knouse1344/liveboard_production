@@ -102,8 +102,9 @@ Lbdevelopmentv03::Application.routes.draw do
   #channels matches
   match 'channels/academics', to: "channels#index", :channel_id => "1"
   match 'channels/arts', to: "channels#index", :channel_id => "2"
-  match 'channels/nightlife', to: "channels#index", :channel_id => "3"
-  match 'channels/sports', to: "channels#index", :channel_id => "4"
+  match 'channels/misc', to: "channels#index", :channel_id => "3"
+  match 'channels/nightlife', to: "channels#index", :channel_id => "4"
+  match 'channels/sports', to: "channels#index", :channel_id => "5"
 
   #friends match
   match 'friends/:id', to: "friends#display"

@@ -1,0 +1,122 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+/* Liveboard */
+/* line 8, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+#mainflarea {
+  position: relative;
+  width: 940px;
+  vertical-align: top;
+  padding-left: 7px;
+}
+
+/* line 14, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.fliers {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+  margin-right: 7px;
+  margin-left: 7px;
+  width: 215px;
+  height: 250px;
+  border: 1px #cacaca solid;
+  background-color: #fbfbfb;
+}
+
+/* line 25, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.flimg {
+  height: 160px;
+  width: 195px;
+  margin-bottom: 5px;
+  border: 1px solid #cacaca;
+}
+
+/* line 31, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+#topflarea {
+  position: relative;
+  width: 940px;
+  vertical-align: top;
+  margin-top: 15px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  border-bottom: 1px #cacaca solid;
+  border-top: 1px #cacaca solid;
+}
+
+/* line 42, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.toptext {
+  font-size: 1.0em;
+  color: #b6b5b5;
+  top: -11px;
+  left: 0px;
+  position: absolute;
+  width: 75px;
+  background-color: #fff;
+}
+
+/* line 51, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.bottext {
+  font-size: 1.0em;
+  color: #b6b5b5;
+  bottom: -8px;
+  left: 0px;
+  position: absolute;
+  width: 100px;
+  background-color: #fff;
+}
+
+/* line 60, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.topfliers {
+  display: inline-block;
+  margin-right: 7px;
+  margin-left: 7px;
+  width: 291px;
+  height: 338px;
+  border: 1px #cacaca solid;
+  background-color: #fbfbfb;
+}
+
+/* line 69, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.topflimg {
+  height: 248px;
+  width: 271px;
+  margin-bottom: 5px;
+  border: 1px solid #cacaca;
+}
+
+/* line 75, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.shadow {
+  -moz-box-shadow: 1px 1px 3px #cacaca;
+  -webkit-box-shadow: 1px 1px 3px #cacaca;
+  box-shadow: 1px 1px 3px #cacaca;
+}
+
+/* line 81, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.flierdata {
+  margin: 10px;
+}
+
+/* line 84, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.fltit {
+  color: #5195f9;
+  line-height: 1.5em;
+  font-size: 1.3em;
+}
+
+/* line 90, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.fltit:hover {
+  color: #000;
+}
+
+/* line 94, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.fladd {
+  position: relative;
+  float: right;
+}
+
+/* line 98, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.fladd:hover {
+  background: url(/assets/addarrow.png) no-repeat;
+}

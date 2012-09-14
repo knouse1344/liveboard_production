@@ -1,0 +1,64 @@
+/* line 6, ../../app/assets/stylesheets/invitations.css.scss */
+#inviteborder {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #cacaca;
+}
+
+/* line 11, ../../app/assets/stylesheets/invitations.css.scss */
+.invitetit {
+  width: 375px;
+  display: inline-block;
+  margin-top: 80px;
+  margin-left: 282px;
+  color: #cacaca;
+  font-weight: bold;
+  font-size: 1.9em;
+}
+
+/* line 20, ../../app/assets/stylesheets/invitations.css.scss */
+.inviterest {
+  position: relative;
+  color: #cacaca;
+}
+
+/* line 24, ../../app/assets/stylesheets/invitations.css.scss */
+.redword {
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  color: #9b1d1d;
+}
+
+/* line 30, ../../app/assets/stylesheets/invitations.css.scss */
+#invitation {
+  position: relative;
+  float: left;
+  margin-top: 100px;
+  margin-left: 40px;
+  padding-bottom: 150px;
+}
+
+/* line 37, ../../app/assets/stylesheets/invitations.css.scss */
+.invitelabel {
+  font-size: 1.3em;
+}
+
+/* line 40, ../../app/assets/stylesheets/invitations.css.scss */
+.invitebtn {
+  position: relative;
+  bottom: 4px;
+}
+
+/* line 44, ../../app/assets/stylesheets/invitations.css.scss */
+#invitedesc {
+  position: relative;
+  float: right;
+  width: 500px;
+  margin-top: 100px;
+  margin-right: 40px;
+  padding-bottom: 150px;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  text-align: right;
+}

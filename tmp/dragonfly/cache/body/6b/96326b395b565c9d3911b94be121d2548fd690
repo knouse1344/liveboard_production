@@ -1,0 +1,107 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+/* header */
+/* line 10, ../../app/assets/stylesheets/header.css.scss.erb */
+.nav {
+  background-color: #fff;
+}
+
+/* line 13, ../../app/assets/stylesheets/header.css.scss.erb */
+#adminbar {
+  position: relative;
+  float: right;
+  bottom: 4px;
+  left: 75px;
+}
+
+/* line 19, ../../app/assets/stylesheets/header.css.scss.erb */
+.adminlist {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 2px;
+}
+
+/* line 24, ../../app/assets/stylesheets/header.css.scss.erb */
+.admincr {
+  margin-right: 10px;
+}
+
+/* line 27, ../../app/assets/stylesheets/header.css.scss.erb */
+.adminna {
+  margin-right: 10px;
+}
+
+/* line 30, ../../app/assets/stylesheets/header.css.scss.erb */
+.adminso {
+  margin-right: 10px;
+}
+
+/* line 33, ../../app/assets/stylesheets/header.css.scss.erb */
+.adminph {
+  margin-right: 10px;
+}
+
+/* line 36, ../../app/assets/stylesheets/header.css.scss.erb */
+.invitemsg {
+  background: transparent;
+  font-size: 1.0em;
+}
+
+/* line 40, ../../app/assets/stylesheets/header.css.scss.erb */
+.search {
+  position: absolute;
+  margin-left: 150px;
+  top: -35px;
+}
+
+/* line 45, ../../app/assets/stylesheets/header.css.scss.erb */
+.searchbtn {
+  position: absolute;
+  font-size: 22pt;
+  top: 0px;
+  margin-left: 380px;
+}
+
+/* line 51, ../../app/assets/stylesheets/header.css.scss.erb */
+.searchfield {
+  position: absolute;
+  width: 360px;
+}
+
+/* line 55, ../../app/assets/stylesheets/header.css.scss.erb */
+.compref {
+  font-size: 2.4em;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 102px;
+  left: 4%;
+  z-index: 100;
+}
+
+/* line 63, ../../app/assets/stylesheets/header.css.scss.erb */
+.lblogo {
+  position: relative;
+  float: left;
+  bottom: 43px;
+  left: -15px;
+  width: 150px;
+}
+
+/* line 70, ../../app/assets/stylesheets/header.css.scss.erb */
+.userimg {
+  width: 25px;
+}
+
+/* line 75, ../../app/assets/stylesheets/header.css.scss.erb */
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 79, ../../app/assets/stylesheets/header.css.scss.erb */
+.shadowhead {
+  border-bottom: 1px #cacaca solid;
+  border-top: 1px #cacaca solid;
+}

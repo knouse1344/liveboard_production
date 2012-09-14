@@ -22,7 +22,7 @@
                       <div class ="flierdata">
                             <%= image_tag Flier.find_by_id(myflier.flier_id).image.url(:thumb), class: "flimg" %>
                             <%= link_to  Flier.find_by_id(myflier.flier_id).title, show_flier_path(:id => myflier.flier_id), class: "fltit" %>
-                            <%= button_to 'Add!', myboard_add_flier_path(:flier_id => myflier.flier_id), class: "btn fladd" %>
+                            <%= button_to '    Add', myboard_add_flier_path(:flier_id => myflier.flier_id), class: "btn fladd" %>
                       </div>
                     </div>
 
