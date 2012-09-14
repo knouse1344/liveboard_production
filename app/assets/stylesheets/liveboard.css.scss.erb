@@ -32,10 +32,30 @@
     position: relative;
     width: 940px;
     vertical-align: top;
-    padding-top: 15px;
+    margin-top: 15px;
+    padding-top: 20px;
     padding-bottom: 30px;
     padding-left:10px;
     border-bottom: 1px #cacaca solid;
+    border-top: 1px #cacaca solid;
+}
+.toptext {
+    font-size: 1.0em;
+    color: #b6b5b5;
+    top: -11px;
+    left: 0px;
+    position: absolute;
+    width: 75px;
+    background-color: #fff;
+}
+.bottext {
+    font-size: 1.0em;
+    color: #b6b5b5;
+    bottom: -8px;
+    left: 0px;
+    position: absolute;
+    width: 100px;
+    background-color: #fff;
 }
 .topfliers {
     display: inline-block;
@@ -73,6 +93,8 @@
 
 .fladd {
     position: relative;
-    left: 9px;
-
+    float: right;
+}
+.fladd:hover {
+    background: url(<%=asset_path "addarrow.png"%>) no-repeat;
 }

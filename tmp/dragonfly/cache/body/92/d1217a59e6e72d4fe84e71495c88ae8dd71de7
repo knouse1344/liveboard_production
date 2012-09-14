@@ -1,0 +1,93 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+/* Liveboard */
+/* line 8, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+#mainflarea {
+  position: relative;
+  width: 940px;
+  vertical-align: top;
+  padding-left: 7px;
+}
+
+/* line 14, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.fliers {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+  margin-right: 7px;
+  margin-left: 7px;
+  width: 215px;
+  height: 250px;
+  border: 1px #cacaca solid;
+  background-color: #fbfbfb;
+}
+
+/* line 25, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.flimg {
+  height: 160px;
+  width: 195px;
+  margin-bottom: 5px;
+  border: 1px solid #cacaca;
+}
+
+/* line 31, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+#topflarea {
+  position: relative;
+  width: 940px;
+  vertical-align: top;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  border-bottom: 1px #cacaca solid;
+}
+
+/* line 40, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.topfliers {
+  display: inline-block;
+  margin-right: 7px;
+  margin-left: 7px;
+  width: 291px;
+  height: 338px;
+  border: 1px #cacaca solid;
+  background-color: #fbfbfb;
+}
+
+/* line 49, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.topflimg {
+  height: 248px;
+  width: 271px;
+  margin-bottom: 5px;
+  border: 1px solid #cacaca;
+}
+
+/* line 55, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.shadow {
+  -moz-box-shadow: 1px 1px 3px #cacaca;
+  -webkit-box-shadow: 1px 1px 3px #cacaca;
+  box-shadow: 1px 1px 3px #cacaca;
+}
+
+/* line 61, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.flierdata {
+  margin: 10px;
+}
+
+/* line 64, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.fltit {
+  color: #5195f9;
+  line-height: 1.5em;
+  font-size: 1.3em;
+}
+
+/* line 70, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.fltit:hover {
+  color: #000;
+}
+
+/* line 74, ../../app/assets/stylesheets/liveboard.css.scss.erb */
+.fladd {
+  position: relative;
+  left: 9px;
+}

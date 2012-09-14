@@ -5,28 +5,32 @@
         <script src="/app/assets/javascripts/jquery-ui-timepicker.js"></script>
         <%= render 'layouts/header' %>
     </head>
-
     <div id ="body">
-            <div class="container">
+      <div class="container">
 
-              <br/><br/><br/><br/>
+                  <br/><br/><br/><br/>
 
-              <div id="newborder">
-                <div id="crfldata">
+        <div id="inviteborder">
 
-<%= form_for @invitation do |f| %>
-<p>
-  <%= f.label :recipient_email, "Friend's email address" %> <br/>
-  <%= f.text_field :recipient_email %>
-  <%= f.submit "Invite!" %>
-</p>
+          <div class="invitetit"><div class="redword">Invite</div><div class="inviterest">your friends to Liveboard</div></div>
 
+          <div id="invitation">
+            <%= form_for @invitation do |f| %>
+            <%= f.label :recipient_email, "Enter email address:", class: "invitelabel"%> <br/>
+            <%= f.text_field :recipient_email %>
+            <%= f.submit "Invite!", class: "btn invitebtn"%>
+            <%end%>
+          </div>
 
-<%end%>
+          <div id="invitedesc">
+                Invite your friends to join Liveboard.  In doing so, you not only contribute
+                to the service itself, but you are allowing others to contribute thus making
+                the experience here that much better.  Just type in a friend's email and hit invite.
+                It's that simple.
+          </div>
+        </div>
 
-</div>
-              </div>
-            </div>
       </div>
-      <div id="footer"><%= render 'layouts/footer' %></div>
+    </div>
+    <div id="footer"><%= render 'layouts/footer' %></div>
 </html>

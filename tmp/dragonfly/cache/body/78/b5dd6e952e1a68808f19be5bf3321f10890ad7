@@ -1,0 +1,13 @@
+(function() {
+
+  jQuery(function() {
+    return $('#flier_start_time').datetimepicker({
+      dateFormat: 'mm-d-yy',
+      ampm: true,
+      minDate: 0,
+      stepMinute: 5,
+      separator: ' @ '
+    });
+  });
+
+}).call(this);

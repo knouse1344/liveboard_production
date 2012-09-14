@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <%= stylesheet_link_tag    "application", media: "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
-    <%= render 'layouts/header' %>
-  </head>
   <div id="body">
 
     <div class="container">
@@ -16,7 +10,7 @@
                         <%end%>
 
                         <%unless @academic_fliers.empty?%>
-                        <br/><br/><br/><h3>Academic:</h3>
+                        <br/><h3>Academic:</h3>
                         <% @academic_fliers.each do |flier| %>
                           <div class="fliers shadow">
                               <div class="flierdata">
@@ -25,11 +19,12 @@
                               </div>
                           </div>
                         <% end %>
+                        <br/><br/><br/>
                         <% end %>
 
 
                         <%unless @arts_fliers.empty?%>
-                        <br/><br/><br/><h3>Arts:</h3>
+                        <h3>Arts:</h3>
                         <% @arts_fliers.each do |flier| %>
                           <div class="fliers shadow">
                               <div class="flierdata">
@@ -38,11 +33,12 @@
                               </div>
                           </div>
                         <% end %>
+                        <br/><br/><br/>
                         <% end %>
 
 
                         <%unless @nightlife_fliers.empty?%>
-                        <br/><br/><br/><h3>Nightlife:</h3>
+                        <h3>Nightlife:</h3>
                         <% @nightlife_fliers.each do |flier| %>
                           <div class="fliers shadow">
                               <div class="flierdata">
@@ -51,11 +47,12 @@
                               </div>
                           </div>
                         <% end %>
+                        <br/><br/><br/>
                         <% end %>
 
 
                         <%unless @sports_fliers.empty?%>
-                        <br/><br/><br/><h3>Sports:</h3>
+                        <h3>Sports:</h3>
                         <% @sports_fliers.each do |flier| %>
                           <div class="fliers shadow">
                               <div class="flierdata">
@@ -64,10 +61,11 @@
                               </div>
                           </div>
                         <% end %>
+                        <br/><br/><br/>
                         <% end %>
 
 
-                        <br/><br/><br/><h3>Created:</h3>
+                        <h3>Created:</h3>
                         <% unless @created_fliers.empty? %>
                         <% @created_fliers.each do |flier| %>
                             <div class="fliers shadow">
@@ -90,7 +88,6 @@
                         <% else %>
                           No fliers here yet.  Try creating one.
                         <%end%>
-
 
 
                       <% unless @invitations.empty? %>

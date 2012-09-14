@@ -1,0 +1,90 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+/* header */
+/* line 10, ../../app/assets/stylesheets/header.css.scss.erb */
+.nav {
+  background-color: #fff;
+}
+
+/* line 13, ../../app/assets/stylesheets/header.css.scss.erb */
+.admin {
+  position: relative;
+  top: -5px;
+  font-family: trebuchet ms;
+}
+
+/* line 18, ../../app/assets/stylesheets/header.css.scss.erb */
+.admin li {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 23, ../../app/assets/stylesheets/header.css.scss.erb */
+.invitemsg {
+  position: absolute;
+  margin-top: 40px;
+  background: transparent;
+  font-size: 1.0em;
+  font-family: trebuchet ms;
+}
+
+/* line 30, ../../app/assets/stylesheets/header.css.scss.erb */
+.search {
+  position: absolute;
+  margin-left: 150px;
+  top: -35px;
+}
+
+/* line 36, ../../app/assets/stylesheets/header.css.scss.erb */
+.searchbtn {
+  position: absolute;
+  top: 0px;
+  margin-left: 380px;
+}
+
+/* line 42, ../../app/assets/stylesheets/header.css.scss.erb */
+.searchfield {
+  width: 360px;
+}
+
+/* line 45, ../../app/assets/stylesheets/header.css.scss.erb */
+.compref {
+  font-size: 2.4em;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 102px;
+  left: 4%;
+  z-index: 100;
+}
+
+/* line 53, ../../app/assets/stylesheets/header.css.scss.erb */
+.lblogo {
+  position: absolute;
+  top: 18px;
+  margin-left: -50px;
+  width: 175px;
+}
+
+/* line 59, ../../app/assets/stylesheets/header.css.scss.erb */
+.userimg {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  bottom: 0px;
+  margin-left: 10px;
+}
+
+/* line 68, ../../app/assets/stylesheets/header.css.scss.erb */
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 72, ../../app/assets/stylesheets/header.css.scss.erb */
+.shadowhead {
+  border-bottom: 1px #cacaca solid;
+  border-top: 1px #cacaca solid;
+}

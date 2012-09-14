@@ -3,6 +3,8 @@
 
         <div id="topflarea">
 
+            <div class="toptext">Top Events</div>
+            <div class="bottext">Everything Else</div>
             <% @top_three.each do |topflier| %>
 
             <div class="topfliers shadow">
@@ -11,11 +13,10 @@
                   <%= link_to topflier.title, show_flier_path(:id => topflier.id), class: "fltit" %>
 
                       <% if @fliers_for_adding.include?(topflier) %>
-                      <%= button_to 'Add to MyBoard', myboard_add_flier_path(:id => topflier.id), class: "btn fladd" %>
+                      <%= button_to 'Add', myboard_add_flier_path(:id => topflier.id), class: "btn fladd" %>
                       <% else %>
                       <p> Already added </p>
                       <%end%>
-            
               </div>
             </div>
 
@@ -33,11 +34,9 @@
                       <%= image_tag flier.image.url(:thumb), class: "flimg" %>
                       <%= link_to flier.title, show_flier_path(:id => flier.id), class: "fltit" %>
 
-                          <% if @fliers_for_adding.include?(flier) %>
-                          <%= button_to 'Add to MyBoard', myboard_add_flier_path(:flier_id => flier.id), class: "btn fladd" %>
-                          <% else %>
-                          <p> Already added </p>
-                          <%end%>
+
+                          <%= button_to '    Add', myboard_add_flier_path(:flier_id => flier.id), class: "btn fladd" %>
+
                 </div>
             </div>
 

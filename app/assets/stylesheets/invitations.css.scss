@@ -1,3 +1,54 @@
 // Place all the styles related to the invitations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#inviteborder {
+	display: inline-block;
+	width: 100%;
+	border: 1px solid #cacaca;
+}
+.invitetit {
+	width: 375px;
+	display: inline-block;
+	margin-top: 80px;
+	margin-left: 282px;
+	color: #cacaca;
+	font-weight: bold;
+	font-size: 1.9em;	
+}
+.inviterest {
+	position: relative;
+	color: #cacaca;
+}
+.redword {
+	position: relative;
+	float: left;
+	margin-right: 5px;
+	color: #9b1d1d;
+}
+#invitation {
+	position: relative;
+	float: left;
+	margin-top: 100px;
+	margin-left: 40px;
+	padding-bottom: 150px;
+}
+.invitelabel {
+	font-size: 1.3em;
+}
+.invitebtn {
+	position: relative;
+	bottom: 4px;
+}
+#invitedesc {
+	position: relative;
+	float: right;
+	width: 500px;
+	margin-top: 100px;
+	margin-right: 40px;
+	padding-bottom: 150px;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	text-align: right;
+}
