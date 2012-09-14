@@ -1,0 +1,171 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+/* Show Fliers */
+/* line 8, ../../app/assets/stylesheets/fliers.css.scss */
+#newborder {
+  border: 1px solid #cacaca;
+  width: 920px;
+  height: 360px;
+  padding: 10px;
+}
+
+/* line 14, ../../app/assets/stylesheets/fliers.css.scss */
+#toprow {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 19, ../../app/assets/stylesheets/fliers.css.scss */
+.shfltit {
+  display: inline-block;
+  position: absolute;
+  width: 300px;
+  margin-top: 25px;
+  margin-left: 35px;
+  margin-bottom: 25px;
+  margin-right: 15px;
+}
+
+/* line 28, ../../app/assets/stylesheets/fliers.css.scss */
+.showbtnlist {
+  position: absolute;
+  display: inline-block;
+  float: right;
+  margin-top: 300px;
+}
+
+/* line 34, ../../app/assets/stylesheets/fliers.css.scss */
+.showbtnlist li {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+/* line 38, ../../app/assets/stylesheets/fliers.css.scss */
+.shfltag {
+  display: inline-block;
+  position: absolute;
+  width: 400px;
+  margin-left: 35px;
+  margin-top: 120px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+
+/* line 47, ../../app/assets/stylesheets/fliers.css.scss */
+.showimg {
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  max-width: 375px;
+  max-height: 300px;
+  padding: 5px;
+  outline: 1px #cacaca solid;
+}
+
+/* line 58, ../../app/assets/stylesheets/fliers.css.scss */
+.shfldesc {
+  display: inline-block;
+  position: absolute;
+  width: 400px;
+  margin-top: 200px;
+  margin-left: 35px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+/* Create Fliers */
+/* line 72, ../../app/assets/stylesheets/fliers.css.scss */
+#crnewborder {
+  border: 1px solid #cacaca;
+  width: 920px;
+  padding: 10px;
+}
+
+/* line 77, ../../app/assets/stylesheets/fliers.css.scss */
+#crfldata {
+  padding-left: 40px;
+  padding-top: 25px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+}
+
+/* line 83, ../../app/assets/stylesheets/fliers.css.scss */
+#crflimg {
+  position: relative;
+  top: 25px;
+  padding-bottom: 50px;
+}
+
+/* line 88, ../../app/assets/stylesheets/fliers.css.scss */
+#crfltitle {
+  display: inline-block;
+  width: 250px;
+}
+
+/* line 92, ../../app/assets/stylesheets/fliers.css.scss */
+#crflchannel {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+/* line 96, ../../app/assets/stylesheets/fliers.css.scss */
+#crflprivacy {
+  display: inline-block;
+  margin-left: 70px;
+}
+
+/* line 100, ../../app/assets/stylesheets/fliers.css.scss */
+#crfldateinput {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* line 107, ../../app/assets/stylesheets/fliers.css.scss */
+.datecursor {
+  cursor: crosshair;
+}
+
+/* line 110, ../../app/assets/stylesheets/fliers.css.scss */
+#crfltagline {
+  position: relative;
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* line 117, ../../app/assets/stylesheets/fliers.css.scss */
+.flytag {
+  width: 508px;
+}
+
+/* line 120, ../../app/assets/stylesheets/fliers.css.scss */
+#crfldescription {
+  display: inline-block;
+  padding-bottom: 25px;
+}
+
+/* line 124, ../../app/assets/stylesheets/fliers.css.scss */
+.flydesc {
+  width: 810px;
+  height: 100px;
+}
+
+/* line 128, ../../app/assets/stylesheets/fliers.css.scss */
+.flytime {
+  width: 60px;
+}
+
+/* line 133, ../../app/assets/stylesheets/fliers.css.scss */
+.field_with_errors .message {
+  position: absolute;
+  color: #ff0000;
+}

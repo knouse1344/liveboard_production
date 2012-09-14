@@ -1,0 +1,64 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+/* line 8, ../../app/assets/stylesheets/myboard.css.scss.erb */
+.fliers {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+  margin-right: 7px;
+  margin-left: 7px;
+  width: 215px;
+  height: 250px;
+  border: 1px #cacaca solid;
+  background-color: #fbfbfb;
+}
+
+/* line 19, ../../app/assets/stylesheets/myboard.css.scss.erb */
+.flimg {
+  height: 160px;
+  width: 195px;
+  margin-bottom: 5px;
+  border: 1px solid #cacaca;
+}
+
+/* line 25, ../../app/assets/stylesheets/myboard.css.scss.erb */
+.shadow {
+  -moz-box-shadow: 1px 1px 3px #cacaca;
+  -webkit-box-shadow: 1px 1px 3px #cacaca;
+  box-shadow: 1px 1px 3px #cacaca;
+}
+
+/* line 30, ../../app/assets/stylesheets/myboard.css.scss.erb */
+.fltit {
+  color: #5195f9;
+  line-height: 1.5em;
+  font-size: 1.3em;
+}
+
+/* line 35, ../../app/assets/stylesheets/myboard.css.scss.erb */
+.flierdata {
+  margin: 10px;
+}
+
+/* line 39, ../../app/assets/stylesheets/myboard.css.scss.erb */
+.btnlist {
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 5px;
+  float: left;
+  list-style-type: none;
+}
+
+/* line 46, ../../app/assets/stylesheets/myboard.css.scss.erb */
+.btnlist li {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+/* line 50, ../../app/assets/stylesheets/myboard.css.scss.erb */
+.del {
+  font-size: 1.7em;
+  font-style: bold;
+}
