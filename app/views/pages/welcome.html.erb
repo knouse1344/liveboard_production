@@ -21,15 +21,15 @@
 
         <div id="loginitems">
             <div class="signin">
-                    <div class="fbdesc">Are you an individual?</div>
+                    <div class="fbdesc">Sign-in as a person</div>
                     <%= form_tag :controller => 'invitations', :action => 'store_token' do %>
-                    <%= text_field_tag :token %>
+                    <%= text_field_tag :token, params[:token] %>
                     <%= submit_tag 'Log-in', :class =>"fbbtn", :id => "login" %>
                     <% end %>
             </div>
 
             <div class="orgsignin">
-                <div class="fbdesc">Are you an organization?</div>
+                <div class="fbdesc">Sign-in as an organization</div>
                 <%= render :partial => "organizations/login", class: "orgform"  %>
             </div>
         </div>
@@ -39,14 +39,11 @@
 
             <div class="logindesc">
                 <div class="desc">The Liveboard is a digital bulletin board for your campus.
-                  You can use the Liveboard to find events in your community.  </div>
+                  You can use the Liveboard to find events on your campus.  </div>
             </div>
         </div>
 
       </div>
   </div>
-
-  <br/><br/><br/><br/>
-
   <div id="footer"><%= render 'layouts/footer' %></div>
 </html>

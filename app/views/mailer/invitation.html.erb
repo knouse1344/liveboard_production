@@ -1,14 +1,15 @@
 Hey there,
 
-<%=@sender.name %> has invited you to join the Liveboard.
+<%=@sender.name %> has invited you to join the Liveboard.<br/><br/>
 
 The Liveboard is a digital bulletin board open, by invitation, to students at select colleges.
 You can use the Liveboard to find events on your campus and to see which events your friends are excited about.
+<br/><br/>
+You can join the Liveboard by clicking the link below:
+<br/><br/>
+<a><%=  "http://localhost:3000/token?="+@invitation.invitation_token %></a>
 
-You can join the Liveboard by inserting the following code on the login page:
-
-<%= @invitation.invitation_token %>
-
-
+<br/>
+<br/>
 
 -The Liveboard Team

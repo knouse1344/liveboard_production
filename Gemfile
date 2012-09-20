@@ -22,6 +22,7 @@ gem 'rmagick'
 
 # misc
 gem 'client_side_validations'
+gem 'resque'
 gem 'chronic'
 gem 'validates_timeliness'
 gem 'koala'
@@ -33,7 +34,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   # if you don't have a local JS runtime install nodejs or include rubyracer gem
-  # gem 'therubyracer', :platform => :ruby
+  gem 'therubyracer', :platform => :ruby
   gem 'uglifier', '>= 1.0.3'
   gem 'jquery-ui-rails'
   gem 'jquery-rails'
@@ -47,7 +48,7 @@ group :test do
 end
 
 group :production do
-  gem 'newrelic_rpm'
+  #gem 'newrelic_rpm'
   gem 'dynamic_form'
   gem 'unicorn'
 end
